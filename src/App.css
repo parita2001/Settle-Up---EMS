@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+input,
+select {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  align-content: flex-start;
+  grid-column: 1 / -1;
+  min-height: 70vh;
+}
+
+section {
+  display: grid;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+section,
+footer {
+  padding: 2rem;
+}
+
+a {
+  color: royalblue;
+}
+
+a:hover {
+  transition: 425ms;
+  color: white;
+  background-color: royalblue;
+}
+
+@media (max-width: 540px) {
+  footer,
+  section {
+    padding: 0 1rem;
+  }
+}
